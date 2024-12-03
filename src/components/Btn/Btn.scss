@@ -1,0 +1,26 @@
+.btn{
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.111);
+    border-radius: 62px;
+    text-align: center;
+    background: transparent;
+
+
+    margin: 20px auto;
+    display: block;
+    
+    transition: 0.5s;
+
+    box-shadow: 3px 3px 0 0;
+
+    cursor: pointer;
+
+    &:hover {
+        // color: white;
+        // background-color: gray;
+
+        box-shadow: 0 0 0 0;
+    }
+}

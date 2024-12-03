@@ -1,0 +1,58 @@
+.browse__wrapp{
+    padding: 75px 64px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+}
+.browse__text{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+.browse__wrapper {
+    display: grid; 
+    grid-auto-columns: 5fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+    "div_1 div_1 div_2 div_2 div_2"
+    "div_3 div_3 div_3 div_4 div_4"; 
+    margin-top: 50px;
+  }
+  .browse__wrapper div{
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+  }
+  
+.div_1 {
+     grid-area: div_1;
+     background-color: white;
+    border-radius: 20px;
+    background-image: url(/casual.png);
+     }
+.div_2 { 
+    grid-area: div_2; 
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(/formal.png);
+
+}
+.div_3 {
+     grid-area: div_3; 
+     background-color: white;
+     border-radius: 20px;
+     background-image: url(/party.png);
+    }
+.div_4 { 
+    grid-area: div_4;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(/gym.png);
+}
+
+
