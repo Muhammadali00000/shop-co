@@ -6,6 +6,19 @@
     justify-content: space-between;
     gap: 50px;
     padding-top: 100px;
+
+
+
+    @media (max-width: 700px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .footer__box{
+        width: 300px;
+      }
+    }
 }
 
 .footer__box{
@@ -27,5 +40,13 @@
 
     h3{
         color: grey;
+    }
+
+
+    @media (max-width: 700px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
     }
 }

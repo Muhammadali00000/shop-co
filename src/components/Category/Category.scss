@@ -1,11 +1,27 @@
 .category{
     padding: 50px 0;
+    @media (max-width: 700px) {
+      margin-top: 100px;
+    }
 }
 .category__wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 40px; 
+
+
+    
+    @media (max-width: 700px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width:100%
+        }
+      }
 }
 
 

@@ -20,6 +20,12 @@
     "div_1 div_1 div_2 div_2 div_2"
     "div_3 div_3 div_3 div_4 div_4"; 
     margin-top: 50px;
+
+
+    @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    }
   }
   .browse__wrapper div{
     min-height: 300px;
