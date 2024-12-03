@@ -28,11 +28,9 @@ const Category = () => {
             </div>
             <Btn>View All</Btn>
         </div>
-    </section>
 
-    <hr style={{margin: '60px 0'}} />
+        <hr />
 
-    <section className="category">
     <div className="container">
 
 
