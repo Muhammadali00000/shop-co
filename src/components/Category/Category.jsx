@@ -29,7 +29,6 @@ const Category = () => {
             <Btn>View All</Btn>
         </div>
 
-        <hr />
 
     <div className="container">
 
