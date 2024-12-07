@@ -1,0 +1,39 @@
+.react-tabs__tab-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+
+.react-tabs__tab {
+    border-bottom: 2px solid lightgray;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.react-tabs__tab--selected{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.product-details{
+    margin-left: 20px;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.react-tabs__tab-panel{
+    &:focus{
+        outline: none;
+    }
+}

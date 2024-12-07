@@ -40,7 +40,9 @@ const Header = () => {
             />
 
             <div className="icon">
+              <Link to={"/Basket"}>
               <img src="./icon-1.svg" alt="" />
+              </Link>
 
               {isAuth ? (
                 <div>

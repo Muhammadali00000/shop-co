@@ -9,6 +9,7 @@ import SingupPage from './pages/SingupPage'
 import LoginPage from './pages/LoginPage'
 import Footer from './components/Footer/Footer'
 import Offers from './components/Offers/Offers'
+import Basket from './components/Basket/Basket'
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
       <Route path='/product/:id' element={<SinglePage/>}/>
       <Route path='/signup' element={<SingupPage/>}  /> 
       <Route path='/login' element={<LoginPage/>}  /> 
+
+
+      
+      <Route path='/basket' element={<Basket/>} />
       
     </Routes>
     <Offers/>
