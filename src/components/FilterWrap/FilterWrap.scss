@@ -1,0 +1,184 @@
+.filter {
+    background-color: #fff;
+    max-width: 300px;
+    border: 1px solid lightgray;
+    padding: 22px;
+    border-radius: 20px;
+
+    > div {
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+}
+.filter__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+.filter__price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter__colors {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.filter__colors-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    cursor: pointer;
+    gap: 15px;  
+    margin-top: 20px;
+
+    div{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: #00C12B;
+        
+        
+        &:nth-child(2){
+            background-color: #F50606;
+        }
+        &:nth-child(3){
+            background-color: #F5DD06;
+        }
+        &:nth-child(4){
+            background-color: #F57906;
+        }
+        &:nth-child(5){
+            background-color: #06CAF5;
+        }
+        &:nth-child(6){
+            background-color: #063AF5;
+        }
+        &:nth-child(7){
+            background-color: #7D06F5;
+        }
+        &:nth-child(8){
+            background-color: #F506A4;
+        }
+        &:nth-child(9){
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+        }
+        &:nth-child(10){
+            background-color: #000000;
+        }
+    }
+}
+.filter__size {
+}
+.filter__size-wrap {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 200px;
+    button{
+        padding: 10px 20px;
+        background-color: #f0f0f0;
+        border-radius: 62px;
+        border: none;
+        color: rgba(0, 0, 0, 0.622);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+.filter__dress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter__btn{
+    padding: 14px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 62px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+// DOUBLE RANGE INPUT
+
+.double-range {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.range-container {
+    position: relative;
+    height: 40px;
+}
+
+.range-input {
+    position: absolute;
+    top: 10px;
+    height: 6px;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    pointer-events: none; /* Запрещаем перекрытие ползунков */
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-color: #F0F0F0;
+}
+
+.range-input::-webkit-slider-thumb {
+    pointer-events: auto; /* Включаем взаимодействие */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    // scale: 2;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.range-progress {
+    position: absolute;
+    top: 20px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.range-values {
+    display: flex;
+    justify-content: space-evenly;
+    // margin-top: 10px;
+    font-weight: bold;
+}
