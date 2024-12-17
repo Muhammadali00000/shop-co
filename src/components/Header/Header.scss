@@ -157,3 +157,9 @@
         font-size: 18px;
     }
 }
+.header {
+    .header__menu {
+      transition: all 0.3s ease-in-out; // Добавь плавные переходы для лучшего эффекта
+    }
+  }
+  
